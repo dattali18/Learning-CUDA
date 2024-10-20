@@ -4,10 +4,10 @@ In This unit, we will explore the microarchitecture of GPU and how it differs fr
 
 ## 0.1 Table of Content
 
-- [CPU vs. GPU](##1.1 CPU vs. GPU Architecture)
-- [NVIDIA GPUs](##1.2 NVIDIA GPUs)
-- [NVIDIA as a software company](##1.3 NVIDIA as a software company)
-- [The usage of CUDA in the world of AI](##1.4 The usage of CUDA in the world of AI)
+- [CPU vs. GPU](## 1.1 CPU vs. GPU Architecture)
+- [NVIDIA GPUs](## 1.2 NVIDIA GPUs)
+- [NVIDIA as a software company](## 1.3 NVIDIA as a software company)
+- [The usage of CUDA in the world of AI](## 1.4 The usage of CUDA in the world of AI)
 
 
 ## 0.2 CPU vs. GPU Architecture
