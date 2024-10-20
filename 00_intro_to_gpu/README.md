@@ -1,8 +1,8 @@
-# 1. Intro to GPU
+# 0. Intro to GPU
 
 In This unit, we will explore the microarchitecture of GPU and how it differs from CPU.
 
-## 1.0 Table of Content
+## 0.1 Table of Content
 
 - [CPU vs. GPU](##1.1 CPU vs. GPU Architecture)
 - [NVIDIA GPUs](##1.2 NVIDIA GPUs)
@@ -10,7 +10,7 @@ In This unit, we will explore the microarchitecture of GPU and how it differs fr
 - [The usage of CUDA in the world of AI](##1.4 The usage of CUDA in the world of AI)
 
 
-## 1.1 CPU vs. GPU Architecture
+## 0.2 CPU vs. GPU Architecture
 
 CPU stands for Central Processing Unit, and it is a general purpose computing chip. A CPU generally has a few cores (in the biggest CPU in the world currently has 64 cores). Each core can execute a single instruction at a time. CPU cores are optimized for serial processing, which means they are good at executing a single instruction at a time. 
 
@@ -66,7 +66,7 @@ The work-flow looks like so:
 6. CPU do some post-processing on the result.
 7. CPU save the result to disk.
 
-## 1.2 NVIDIA GPUs
+## 0.3 NVIDIA GPUs
 
 NVIDIA is a chip maker that produce GPUs, we will take a look a their product over the years to understand the evolution of the GPU as a product.
 
@@ -148,7 +148,7 @@ NVIDIA is a chip maker that produce GPUs, we will take a look a their product ov
 
 There is a new architecture coming out called **Blackwell** which is a new microarchitecture designed for edge computing and IoT applications. It is expected to have lower power consumption and a smaller form factor compared to previous architectures.
 
-## 1.3 NVIDIA as a software company
+## 0.4 NVIDIA as a software company
 
 NVIDIA is not a hardware company anymore, they are also a software company. They have developed a lot of software to help developers and researchers to develop software for their GPUs. Some of the software that NVIDIA has developed are:
 
@@ -174,7 +174,7 @@ This gave NVIDIA the edge over other company.
 
 This give us a better understanding of the CUDA as a project as a whole. We now understand what it is and why it is important.
 
-## 1.4 The usage of CUDA in the world of AI
+## 0.5 The usage of CUDA in the world of AI
 
 Here is a short list of AI and ML frameworks that use CUDA for accelerating and optimizing their operations:
 
