@@ -2,15 +2,7 @@
 
 In This unit, we will explore the microarchitecture of GPU and how it differs from CPU.
 
-## 0.1 Table of Content
-
-- [CPU vs. GPU](## 1.1 CPU vs. GPU Architecture)
-- [NVIDIA GPUs](## 1.2 NVIDIA GPUs)
-- [NVIDIA as a software company](## 1.3 NVIDIA as a software company)
-- [The usage of CUDA in the world of AI](## 1.4 The usage of CUDA in the world of AI)
-
-
-## 0.2 CPU vs. GPU Architecture
+## 0.1 CPU vs. GPU Architecture
 
 CPU stands for Central Processing Unit, and it is a general purpose computing chip. A CPU generally has a few cores (in the biggest CPU in the world currently has 64 cores). Each core can execute a single instruction at a time. CPU cores are optimized for serial processing, which means they are good at executing a single instruction at a time. 
 
@@ -28,7 +20,7 @@ There is also a difference in the size and speed of the different caches.
 | L1  | Typically smaller (e.g., 32KB-64KB per core) / Very fast (directly accessed by core)                               | Often larger (e.g., 32KB-64KB per SM) / Very fast (directly accessed by SM)           |
 | L2  | Larger than L1 (e.g., 256KB-512KB per core) / Slower than L1, but faster than main memory                          | Larger than L1 (e.g., 512KB-1MB per SM) / Slower than L1, but faster than main memory |
 | L3  | Largest cache level (e.g., 8MB-32MB shared by multiple cores) / Slower than L1 and L2, but faster than main memory | Smaller or nonexistent                                                                |
-### 1.1.1 Key Differences in Caches:
+### 0.1.1 Key Differences in Caches:
 
 - **Cache Hierarchy:** CPUs often have a more complex cache hierarchy with L1, L2, and L3 levels, while GPUs typically have only L1 and L2 caches.
 - **Cache Size:** GPUs tend to have larger L1 and L2 caches per processing unit (SM) compared to CPUs per core. This is because GPUs are designed for parallel processing and need to store more data for concurrent operations.
@@ -39,7 +31,7 @@ There is also a difference in the size and speed of the different caches.
 - **Parallel Processing:** GPUs handle many tasks simultaneously, requiring more data to be readily available.
 - **Memory Access Latency:** GPUs often have higher memory access latency compared to CPUs, so larger caches can help reduce the frequency of memory accesses.
 
-### 1.1.2 The Usage of GPU
+### 0.1.2 The Usage of GPU
 
 In this section will will take a look at how GPUs are used mainly through the lens of AI & DL.
 
@@ -52,7 +44,7 @@ In this section will will take a look at how GPUs are used mainly through the le
 
 Why? Because all of the operation above are based on  **linear algebra** which can be parallelized. This is why GPUs are so good at AI & DL.
 
-### 1.1.3 CPU GPU communication
+### 0.1.3 CPU GPU communication
 
 In the world of AI & DL, the CPU is used to manage the data and the GPU is used to do the computation. The CPU will load the data into the GPU, and the GPU will do the computation. The CPU will then take the result and do some post-processing on the result. This is the general workflow of AI & DL.
 
@@ -66,7 +58,7 @@ The work-flow looks like so:
 6. CPU do some post-processing on the result.
 7. CPU save the result to disk.
 
-## 0.3 NVIDIA GPUs
+## 0.2 NVIDIA GPUs
 
 NVIDIA is a chip maker that produce GPUs, we will take a look a their product over the years to understand the evolution of the GPU as a product.
 
@@ -148,7 +140,7 @@ NVIDIA is a chip maker that produce GPUs, we will take a look a their product ov
 
 There is a new architecture coming out called **Blackwell** which is a new microarchitecture designed for edge computing and IoT applications. It is expected to have lower power consumption and a smaller form factor compared to previous architectures.
 
-## 0.4 NVIDIA as a software company
+## 0.3 NVIDIA as a software company
 
 NVIDIA is not a hardware company anymore, they are also a software company. They have developed a lot of software to help developers and researchers to develop software for their GPUs. Some of the software that NVIDIA has developed are:
 
@@ -174,7 +166,7 @@ This gave NVIDIA the edge over other company.
 
 This give us a better understanding of the CUDA as a project as a whole. We now understand what it is and why it is important.
 
-## 0.5 The usage of CUDA in the world of AI
+## 0.4 The usage of CUDA in the world of AI
 
 Here is a short list of AI and ML frameworks that use CUDA for accelerating and optimizing their operations:
 
