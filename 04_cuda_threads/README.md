@@ -183,20 +183,17 @@ A = \begin{bmatrix}
 a_{11} & a_{12} \\  
 a_{21} & a_{22} \\
 \end{bmatrix}
-
-
+,
 \begin{bmatrix}  
 a_{13} & a_{14} \\  
 a_{23} & a_{24} \\
 \end{bmatrix}
-
-
+,
 \begin{bmatrix}
 a_{31} & a_{32} \\  
 a_{41} & a_{42} \\
 \end{bmatrix}
-
-
+,
 \begin{bmatrix}  
 a_{33} & a_{34} \\  
 a_{43} & a_{44} \\
@@ -209,18 +206,17 @@ B = \begin{bmatrix}
 b_{11} & b_{12} \\  
 b_{21} & b_{22} \\
 \end{bmatrix}
-
+,
 \begin{bmatrix}  
 b_{13} & b_{14} \\  
 b_{23} & b_{24} \\
 \end{bmatrix}
-
-
+,
 \begin{bmatrix}  
 b_{31} & b_{32} \\  
 b_{41} & b_{42} \\
 \end{bmatrix}
-
+,
 \begin{bmatrix}
 b_{33} & b_{34} \\  
 b_{43} & b_{44} \\
