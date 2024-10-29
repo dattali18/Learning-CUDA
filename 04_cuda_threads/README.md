@@ -155,16 +155,17 @@ The idea behind tiling is to break the matrix into smaller submatrices and calcu
 
 Here is a simple example to illustrate the idea:
 
-Given two matrices $A$ and $B$ of size $4 \times 4$ and $4 \times 4$ respectively, we can break them into smaller submatrices of size $2 \times 2$ and calculate the result for each submatrix.
+Given two matrices $A$ and $B$ of size $4 \times 4$ and $4 \times 4$, we can break them into smaller submatrices of size $2 \times 2$ and calculate the result for each submatrix.
 
-Here is the example:
+Here is an example:
 
 $$A = \begin{bmatrix}  
 a_{11} & a_{12} & a_{13} & a_{14} \\  
 a_{21} & a_{22} & a_{23} & a_{24} \\
 a_{31} & a_{32} & a_{33} & a_{34} \\
 a_{41} & a_{42} & a_{43} & a_{44} \\
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 
 $$B = \begin{bmatrix}  
@@ -172,43 +173,59 @@ b_{11} & b_{12} & b_{13} & b_{14} \\
 b_{21} & b_{22} & b_{23} & b_{24} \\
 b_{31} & b_{32} & b_{33} & b_{34} \\
 b_{41} & b_{42} & b_{43} & b_{44} \\
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 Now we will break the matrices into smaller submatrices of size $2 \times 2$:
 
-$$A = \begin{bmatrix}  
+$$
+A = \begin{bmatrix}  
 a_{11} & a_{12} \\  
 a_{21} & a_{22} \\
-\end{bmatrix} \begin{bmatrix}  
+\end{bmatrix}
 
+
+\begin{bmatrix}  
 a_{13} & a_{14} \\  
 a_{23} & a_{24} \\
-\end{bmatrix} \begin{bmatrix}  
+\end{bmatrix}
 
+
+\begin{bmatrix}
 a_{31} & a_{32} \\  
 a_{41} & a_{42} \\
-\end{bmatrix} \begin{bmatrix}  
+\end{bmatrix}
 
+
+\begin{bmatrix}  
 a_{33} & a_{34} \\  
 a_{43} & a_{44} \\
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 
-$$B = \begin{bmatrix}  
+$$
+B = \begin{bmatrix}  
 b_{11} & b_{12} \\  
 b_{21} & b_{22} \\
-\end{bmatrix} \begin{bmatrix}  
+\end{bmatrix}
 
+\begin{bmatrix}  
 b_{13} & b_{14} \\  
 b_{23} & b_{24} \\
-\end{bmatrix} \begin{bmatrix}  
+\end{bmatrix}
 
+
+\begin{bmatrix}  
 b_{31} & b_{32} \\  
 b_{41} & b_{42} \\
-\end{bmatrix} \begin{bmatrix}
+\end{bmatrix}
+
+\begin{bmatrix}
 b_{33} & b_{34} \\  
 b_{43} & b_{44} \\
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 Now we will calculate the result for each submatrix:
 
