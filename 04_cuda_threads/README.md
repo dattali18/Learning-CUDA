@@ -366,4 +366,38 @@ Let's take a look at all the different types of memory used in this algorithm an
 
 The full code for the matrix multiplication algorithm is in the `04.02_matMul` folder, see [here](/04_cuda_threads/04.02_matMul/matMul.cu). there is also the `host` code to run the kernel.
 
+## 4.4 Streams
+
+In order to understand stream we need to understand the need of optimization. In a CUDA program we always perform the following steps:
+
+1. Allocate memory on the device.
+2. Copy the data from the host to the device.
+3. Calling the kernel.
+4. Copy the result back to the host.
+
+So has we can see all program have in common is the copying the data from and to the device. So if we can optimize those operation we will improve the performance of our program.
+
+The idea behind streams is to perform the copy operations in parallel with the kernel execution. This is done by creating multiple streams and using them to copy the data.
+
+Here is a simple example to illustrate the idea:
+
+```cpp
+cudaStream_t stream1, stream2;
+cudaStreamCreate(&stream1);
+cudaStreamCreate(&stream2);
+
+cudaMemcpyAsync(d_a, a, n * sizeof(float), cudaMemcpyHostToDevice, stream1);
+cudaMemcpyAsync(d_b, b, n * sizeof(float), cudaMemcpyHostToDevice, stream2);
+
+vectorAdd<<<grid_size, block_size, 0, stream1>>>(d_a, d_b, d_c, n);
+
+cudaMemcpyAsync(c, d_c, n * sizeof(float), cudaMemcpyDeviceToHost, stream2);
+
+cudaStreamDestroy(stream1);
+cudaStreamDestroy(stream2);
+```
+
+In a diagram we can show the idea as follows:
+
+![Streams](/images/09_image.png)
 
