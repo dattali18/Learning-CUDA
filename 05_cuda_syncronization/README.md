@@ -75,7 +75,7 @@ int main() {
 
 In the above code, the kernel is launched with 1 block and 10 threads. The kernel increments the value of `a` by 1 using the atomicAdd function. The atomicAdd function is used to perform atomic addition on the shared memory location `a`.
 
-## Thready Synchronisation
+## Thread Synchronisation
 
 As we saw in the Matrix Multiplication example, we can use thread synchronization to synchronize the threads in a block. We can use the `__syncthreads()` function to synchronize the threads in a block.
 
