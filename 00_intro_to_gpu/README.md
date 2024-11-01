@@ -2,6 +2,12 @@
 
 In This unit, we will explore the microarchitecture of GPU and how it differs from CPU.
 
+## Table of Content
+
+- [CPU vs. GPU Architecture](#01-cpu-vs-gpu-architecture)
+- [NVIDIA GPUs](#02-nvidia-gpus)
+- [NVIDIA as a software company](#03-nvidia-as-a-software-company)
+- [The usage of CUDA in the world of AI](#04-the-usage-of-cuda-in-the-world-of-ai)
 ## 0.1 CPU vs. GPU Architecture
 
 CPU stands for Central Processing Unit, and it is a general purpose computing chip. A CPU generally has a few cores (in the biggest CPU in the world currently has 64 cores). Each core can execute a single instruction at a time. CPU cores are optimized for serial processing, which means they are good at executing a single instruction at a time. 
