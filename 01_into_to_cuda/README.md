@@ -90,7 +90,7 @@ In the illustration above you can see a few things:
 
 8. **Constant Memory**: Memory that is read-only and cached.
 
-9. **Texture Memory**: Memory that is optimized for 2D spatial locality. (not used in AI & DL).
+9. **Texture Memory**: Memory that is optimized for 2D spatial locality. (not used in AI & DL). (Not used in AI)
 
 10. **Unified Memory**: Memory that is shared between the host and device.
 
