@@ -17,13 +17,13 @@ I have divided the learning process into serval units:
 
 There is also a folder called `general_knowledge` where I will store general knowledge about parallel computing in general.
 
-* [Amdahl's Law](/general_knowledge/amdahls_law.md)
+* [Amdahl's Law](amdahl's_law.md)
 * [SIMD](/general_knowledge/simd.md)
 * [SSE4](/general_knowledge/sse4.md)
 
 
 > [!NOTE]
-> The real code example of CUDA code are in the `04_cuda_threads` folder. starting with the `04.01.vector_add` project.
+> The real code example of CUDA code are in the `04_cuda_threads` folder. starting with the `04.01_vectoAdd` project.
 
 > [!NOTE]
 > In this repo we don't tell you how to install or compile CUDA code. We are here to give the basic understanding of CUDA programming.

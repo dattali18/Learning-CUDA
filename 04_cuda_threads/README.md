@@ -80,13 +80,13 @@ int main() {
 
 You can see in the `add_vector` function that we allocate memory on the device, copy the data from the host to the device, call the kernel, copy the result back to the host and free the memory. This is the basic structure of most CUDA programs.
 
-You can see more in the `04.01.vector_add` folder. In which we include:
+You can see more in the `04.01_vectorAdd` folder. In which we include:
 
 1. `vectorAdd.cu`: The actual code with the kernel and utility functions.
 2. `CMakeList.txt`: The `CMake` file to compile the code.
 3. `run.sh`: A script to compile and run the code.
 
-In order to run the code, go to the `04.01.vector_add` folder and run the following commands:
+In order to run the code, go to the `04.01_vectorAdd` folder and run the following commands:
 
 ```bash
 bash run.sh
@@ -145,17 +145,17 @@ As you can see the basic CPU implementation is very slow in in CS term is runnin
 Now we will see the CUDA implementation of the matrix multiplication algorithm. We will use an optimization technique called `tiling` to achieve better performance.
 
 > [!NOTE]
-> The entire code for the matrix multiplication is in the `04.02.matrix_multiplication` folder, see [here](/04_cuda_threads/04.02_matMul/matMul.cu).
+> The entire code for the matrix multiplication is in the `04.02_matMul` folder, see [here](/04_cuda_threads/04.02_matMul/matMul.cu).
 
 In order to understand the code we will first start be explaining the `tiling` technique.
 
 #### Tiling
 
-The idea behind tiling is to break the matrix into smaller submatrices and calculate the result for each submatrix. This is a very common optimization technique in matrix multiplication algorithms.
+The idea behind tiling is to break the matrix into smaller sub-matrices and calculate the result for each sub-matrix. This is a very common optimization technique in matrix multiplication algorithms.
 
 Here is a simple example to illustrate the idea:
 
-Given two matrices $A$ and $B$ of size $4 \times 4$ and $4 \times 4$, we can break them into smaller submatrices of size $2 \times 2$ and calculate the result for each submatrix.
+Given two matrices $A$ and $B$ of size $4 \times 4$ and $4 \times 4$, we can break them into smaller sub-matrices of size $2 \times 2$ and calculate the result for each sub-matrix.
 
 Here is an example:
 
@@ -176,7 +176,7 @@ b_{41} & b_{42} & b_{43} & b_{44} \\
 \end{bmatrix}
 $$
 
-Now we will break the matrices into smaller submatrices of size $2 \times 2$:
+Now we will break the matrices into smaller sub-matrices of size $2 \times 2$:
 
 $$
 A = \begin{bmatrix}  

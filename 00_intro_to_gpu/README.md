@@ -20,6 +20,8 @@ There is also a difference in the size and speed of the different caches.
 | L1  | Typically smaller (e.g., 32KB-64KB per core) / Very fast (directly accessed by core)                               | Often larger (e.g., 32KB-64KB per SM) / Very fast (directly accessed by SM)           |
 | L2  | Larger than L1 (e.g., 256KB-512KB per core) / Slower than L1, but faster than main memory                          | Larger than L1 (e.g., 512KB-1MB per SM) / Slower than L1, but faster than main memory |
 | L3  | Largest cache level (e.g., 8MB-32MB shared by multiple cores) / Slower than L1 and L2, but faster than main memory | Smaller or nonexistent                                                                |
+
+
 ### 0.1.1 Key Differences in Caches:
 
 - **Cache Hierarchy:** CPUs often have a more complex cache hierarchy with L1, L2, and L3 levels, while GPUs typically have only L1 and L2 caches.

@@ -107,4 +107,69 @@ In the illustration above you can see a few things:
 16. **SIMT**: Single Instruction, Multiple Threads. A way to run the same instruction on multiple threads.
 
 
+## 1.5 SM
+
+SM (Streaming Multiprocessor) is a group of CUDA cores. It is the basic building block of the GPU architecture. Each SM contains multiple CUDA cores that can execute instructions in parallel. The number of CUDA cores per SM can vary depending on the GPU model and architecture. SMs are responsible for executing the kernel code and managing the execution of threads.
+
+The SM contains the following components:
+
+1. **L-Cache**: A small, fast memory cache that stores frequently accessed data and instructions.
+2. **MT Issue**: The instruction issue unit that schedules and dispatches instructions to the CUDA cores.
+3. **C-Cache**: A shared memory cache that stores data shared among CUDA cores in the SM.
+4. **SPs**: CUDA cores that perform arithmetic and logical operations on data.
+5. **SFUs**: Special Function Units that perform complex operations like transcendental functions.
+6. **DP**: Double-precision units that perform double-precision floating-point operations.
+7. **Shared Memory**: A fast, on-chip memory that is shared among threads in the same block.
+
+
+![GPU Architecture](/images/14_image.png)
+
+## 1.6 Microarchitecture
+
+![Microarchitecture](/images/15_image.png)
+
+In the diagram we can see the whole picture of a GPU. We have the following component:
+
+- **CPU**: The central processing unit (CPU) is the main processor in a computer. It executes instructions and performs calculations.
+- **Host Memory (RAM)**: The host memory is the main memory of the computer. It stores data and instructions that are used by the CPU.
+- **PCIe Bus**: The PCIe bus is a high-speed serial bus that connects the CPU to the GPU.
+- **GPU**:  The graphics processing unit (GPU) is a specialized processor that is designed to render graphics and perform parallel computations.
+	- **Global Memory (VRAM)**: The global memory is the main memory of the GPU. It stores data and instructions that are used by the GPU.
+	- **GPU Memory Bus**: The GPU memory bus is a high-speed bus that connects the GPU to the global memory.
+	- **L2 Cache**: The L2 cache is a small, fast memory cache that stores frequently accessed data and instructions.
+	- **SM**: The streaming multiprocessor (SM) is a group of CUDA cores that can execute instructions in parallel.
+		- **Shared Memory**: The shared memory is a fast, on-chip memory that is shared among threads in the same block.
+		- **L1 Cache**: The L1 cache is a small, fast memory cache that stores frequently accessed data and instructions.
+		- **Registers**: : Registers are small, fast memory locations that store data and instructions that are used by the CUDA cores.
+		- **CUDA Cores**: CUDA cores are small, specialized processors that perform arithmetic and logical operations on data.
+
+## 1.7 CUDA Core
+
+A CUDA core is a small, specialized processor that is designed to perform arithmetic and logical operations on data. CUDA cores are the basic building blocks of the GPU architecture. Each CUDA core can execute a single instruction in parallel with other CUDA cores. The number of CUDA cores in a GPU can vary depending on the GPU model and architecture.
+
+What is interesting about CUDA cores is that they are designed to be highly parallel. This means that they can execute many instructions in parallel, which allows them to perform complex calculations quickly and efficiently. CUDA cores are optimized for parallel processing and are designed to handle large amounts of data in parallel.
+
+![CUDA Core](/images/16_image.webp)
+
+As we can see inside the CUDA core there is:
+
+- **Dispatch Port**: The dispatch port is responsible for scheduling and dispatching instructions to the CUDA core.
+- **Operand Collector**: The operand collector is responsible for fetching the operands required for the instruction.
+- **FP Unit**: The floating-point unit (FP unit) is responsible for performing arithmetic operations on floating-point numbers.
+- **INT Unit**: The integer unit (INT unit) is responsible for performing arithmetic operations on integer numbers.
+- **Result Collector**: The result collector is responsible for collecting the result of the instruction and storing it in the register file.
+
+## 1.8 CUDA Memory Model
+
+Take a look at the dedicated unit for it [here](/03_cuda_memory/README.md).
+
+## 1.9 Thread Wrap
+
+A warp is a group of 32 threads that are executed in parallel on the GPU. The warp is the basic unit of execution on the GPU. Each thread in the warp executes the same instruction at the same time. This allows the GPU to perform operations on multiple data points simultaneously.
+
+This means that sometime we require the number of threads to be a multiple of 32. This is because the GPU executes threads in warps of 32 threads. If the number of threads is not a multiple of 32, the GPU will create a warp with the remaining threads and execute them in parallel.
+
+## 1.10 SIMD
+
+There is a dedicated unit explaining the concept of SIMD [here](/general_knowledge/simd.md).
 
