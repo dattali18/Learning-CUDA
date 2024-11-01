@@ -1,10 +1,15 @@
-# CUDA Tools
+# 6.0 CUDA Tools
 
 In this units, we will explore tools provided by NVIDIA for profiling and optimization such as Nsight Compute (for profiling kernels).
 
 Since we are not able to run Nsight Compute on the cloud, we will provide you with a brief overview of the tool and how to use it on your local machine.
 
-## Nsight Compute
+## Table of Contents
+
+- [Nsight Compute](#61-nsight-compute)
+- [Nsight System](#62-nsight-system)
+
+## 6.1 Nsight Compute
 
 Nsight Compute is a profiler for CUDA applications. It allows you to analyze the performance of your CUDA kernels and identify bottlenecks in your code.
 
@@ -46,6 +51,6 @@ In this unit, we explored the Nsight Compute profiler for CUDA applications. We 
 
 There many more to explore for this tool that is very useful for optimization of you CUDA code.
 
-## Nsight System
+## 6.2 Nsight System
 
 We will not dive into the Nsight System in this unit, but it is also a very useful tool to profile the whole system and not only the CUDA kernels.

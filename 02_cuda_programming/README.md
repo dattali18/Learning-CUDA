@@ -2,6 +2,15 @@
 
 In this unit, we will explore further into programming with CUDA, focusing mainly on the application in the world of AI & DL.
 
+## Table of Contents
+
+- [Introduction](#21-introduction)
+- [CUDA Programming Model](#22-cuda-programming-model)
+ - [CUDA Kernels](#23-kernels)
+ - [Thread Hierarchies / Indexing](#24-thread-hierarchies--indexing)
+ - [Memory Hierarchy](#25-memory-hierarchy)
+ - [Heterogeneous Programming](#26-heterogeneous-programming)
+
 ## 2.1 Introduction
 
 CUDA is an extension of the C++ language.
@@ -74,6 +83,7 @@ mat_mul<<<grid, block>>>(a, b, c, n);
 
 In the code above we introduce the calling convention of a kernel function called `mat_mul` that is executed by a grid of blocks. Each block has 16x16 threads. The `n` is the size of the matrix.
 The `<<<>>>` syntax is used to specify the grid and block size given in `dim3`.
+
 
 ## 2.3 Kernels
 

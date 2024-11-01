@@ -1,6 +1,10 @@
 # 3. CUDA Memory Model
 
 In this unit, we will explore the CUDA Memory Model and it's hierarchy. we will try and understand the different types of memory available in CUDA and how to use them best to optimize our code.
+## Table of Contents
+
+- [Introduction](#31-introduction)
+- [Memory Hierarchy](#32-memory-hierarchy)
 
 ## 3.1 Introduction
 

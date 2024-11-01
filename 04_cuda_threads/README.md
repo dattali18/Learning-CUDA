@@ -2,6 +2,18 @@
 
 In this unit, we will explore the CUDA Thread Model and how to use it to optimize our code. Understanding how to best utilize the threads (shapes and sizes) in different operations such as matrix multiplication, vector addition, etc. is crucial to writing efficient CUDA code.
 
+## Table of Contents
+
+- [Introduction](#41-introduction)
+- [Vector Addition](#42-vector-addition)
+- [Matrix Multiplication](#43-matrix-multiplication)
+- [Streams](#44-streams)
+
+### Code Example
+
+- [Vector Addition](/04_cuda_threads/04.01_vectorAdd)
+- [Matrix Multiplication](/04_cuda_threads/04.02_matMul)
+
 ## 4.1 Introduction
 
 In CUDA, the idea is to try and parallelize the code as much as possible. The basic unit of execution in CUDA is the thread. Threads are grouped into blocks and blocks are grouped into grids. The number of threads in a block is limited by the hardware, but the number of blocks in a grid is not. Threads in a block can communicate with each other using shared memory, but threads in different blocks cannot. 

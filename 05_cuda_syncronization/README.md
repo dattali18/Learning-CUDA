@@ -1,4 +1,4 @@
-# CUDA Synchronization
+# 5.0 CUDA Synchronization
 
 In this unit, we will explore the CUDA API for thread synchronization. We will learn how to use the different synchronization primitives provided by CUDA to write efficient and correct parallel code. We will also touch on the async operations in CUDA and the usage of atomic operations.
 
@@ -7,7 +7,15 @@ In CUDA there is two ways of doing things:
 - **Synchronous**: The CPU waits for the GPU to finish the task.
 - **Asynchronous**: The CPU does not wait for the GPU to finish the task.
 
-## Synchronous Operations
+## Table of Contents
+
+- [Synchronous Operations](#51-synchronous-operations)
+- [Asynchronous Operations](#52-asynchronous-operations)
+- [Atomic Operations](#53-atomic-operations)
+- [Thread Synchronization](#54-thread-synchronization)
+- [Conclusion](#55-conclusion)
+
+## 5.1 Synchronous Operations
 
 In synchronous operations, the CPU waits for the GPU to finish the task. This is the default behavior of CUDA. The CPU will wait for the GPU to finish the task before moving on to the next task. This is useful when you want to synchronize the CPU and GPU.
 
@@ -28,7 +36,7 @@ int main() {
 
 In the above code, the kernel is launched with 1 block and 10 threads. The CPU will wait for the GPU to finish the kernel execution before printing "Hello from CPU".
 
-## Asynchronous Operations
+## 5.2 Asynchronous Operations
 
 In asynchronous operations, the CPU does not wait for the GPU to finish the task. This is useful when you want to overlap the CPU and GPU tasks.
 
@@ -49,7 +57,7 @@ int main() {
 
 In the above code, the kernel is launched with 1 block and 10 threads. The CPU will not wait for the GPU to finish the kernel execution and will print "Hello from CPU" before the kernel execution is complete.
 
-## Atomic Operations
+## 5.3 Atomic Operations
 
 Atomic operations are used to perform operations on shared memory locations. Atomic operations are used
 
@@ -75,7 +83,7 @@ int main() {
 
 In the above code, the kernel is launched with 1 block and 10 threads. The kernel increments the value of `a` by 1 using the atomicAdd function. The atomicAdd function is used to perform atomic addition on the shared memory location `a`.
 
-## Thread Synchronisation
+## 5.4 Thread Synchronization
 
 As we saw in the Matrix Multiplication example, we can use thread synchronization to synchronize the threads in a block. We can use the `__syncthreads()` function to synchronize the threads in a block.
 
@@ -125,6 +133,6 @@ __global__ void kernel(int *a) {
 In the above code, the kernel is launched with 1 block and 10 threads. The kernel increments the value of `a` by the thread id using the atomicAdd function.
 
 
-## Conclusion
+## 5.5 Conclusion
 
 In this unit, we explored the CUDA API for thread synchronization. We learned how to use the different synchronization primitives provided by CUDA to write efficient and correct parallel code. We also touched on the async operations in CUDA and the usage of atomic operations.

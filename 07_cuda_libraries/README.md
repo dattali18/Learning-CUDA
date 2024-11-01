@@ -1,4 +1,4 @@
-# CUDA Libraries
+# 7.0 CUDA Libraries
 
 In this unit, we will touch on the different library provided by NVIDIA to help us write better and faster CUDA code such as cuBLAS, cuDNN, and more. We will also explore how to use these libraries in our code.
 
@@ -16,7 +16,13 @@ CUDA Libraries such as:
 
 For the time being we will take a look at cuBLAS and cuFFT.
 
-## cuBLAS
+## Table of Contents
+
+- [cuBLAS](#71-cublas)
+- [cuFFT](#72-cufft)
+- [Conclusion](#73-conclusion)
+
+## 7.1 cuBLAS
 
 cuBLAS is a library provided by NVIDIA for performing basic linear algebra operations on NVIDIA GPUs. It provides a set of routines that are optimized for NVIDIA GPUs to perform matrix operations such as matrix multiplication, matrix addition, and more.
 
@@ -143,7 +149,7 @@ All operations using the cuBLAS library has the same structure as the above exam
 > All operation in the cuBLAS library are heterogeneous, meaning that the operation is done on the GPU. And they can be called from the host code.
 
 
-## cuFFT
+## 7.2 cuFFT
 
 cuFFT is a library provided by NVIDIA for performing fast Fourier transform (FFT) operations on NVIDIA GPUs. It provides a set of routines that are optimized for NVIDIA GPUs to perform FFT operations on complex and real data.
 
@@ -230,7 +236,7 @@ where:
 - $X_k$ is the $k^{th}$ frequency component
 - $x_n$ is the $n^{th}$ input signal
 
-## Conclusion
+## 7.3 Conclusion
 
 In this unit, we explored the cuBLAS and cuFFT libraries provided by NVIDIA for performing basic linear algebra and fast Fourier transform operations on NVIDIA GPUs. We learned how to use these libraries in our CUDA code to perform matrix-vector multiplication and FFT operations. These libraries provide optimized routines for performing these operations on NVIDIA GPUs, allowing us to write faster and more efficient CUDA code.
 
