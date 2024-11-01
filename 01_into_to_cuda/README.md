@@ -2,6 +2,19 @@
 
 In this unit, we will explore CUDA what is it and what problem it solves.
 
+## Table of Contents
+
+- [What is CUDA](#11-what-is-cuda)
+- [Introduction to CUDA](#12-introduction-to-cuda)
+- [CUDA Programming Model](#13-cuda-programming-model)
+- [Key CUDA Concepts](#14-key-cuda-concepts)
+- [SM](#15-sm)
+- [Microarchitecture](#16-microarchitecture)
+- [CUDA Core](#17-cuda-core)
+- [CUDA Memory Model](#18-cuda-memory-model)
+- [Thread Wrap](#19-thread-wrap)
+- [SIMD](#110-simd)
+
 ## 1.1 What is CUDA?
 
 **CUDA** (Compute Unified Device Architecture) is a parallel computing platform and application programming interface (API) model created by Nvidia. It allows software developers to use a CUDA-enabled graphics processing unit (GPU) for general-purpose processing.
