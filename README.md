@@ -14,6 +14,7 @@ I have divided the learning process into serval units:
 - [CUDA Thread Synchronization](/05_cuda_syncronization/README.md)
 - [CUDA Tools](/06_cuda_tools/README.md)
 - [CUDA Libraries](/07_cuda_libraries/README.md)
+- [NVVC Compiler](/08_nvcc_compiler/README.md)
 
 There is also a folder called `general_knowledge` where I will store general knowledge about parallel computing in general.
 
