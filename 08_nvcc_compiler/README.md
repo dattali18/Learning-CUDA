@@ -35,6 +35,11 @@ For a full list of options you can use the following command:
 nvcc --help
 ```
 
+Flag for profiling:
+
+```
+nvcc -lineinfo
+```
 ## 8.4 Compilation Process
 
 The compilation process for a CUDA program with `nvcc` is as follows:
