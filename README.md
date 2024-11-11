@@ -19,13 +19,24 @@ I have divided the learning process into serval units:
 
 There is also a folder called `general_knowledge` where I will store general knowledge about parallel computing in general.
 
-* [Amdahl's Law](amdahl's_law.md)
-* [SIMD](/general_knowledge/simd.md)
-* [SSE4](/general_knowledge/sse4.md)
+- [Amdahl's Law](amdahl's_law.md)
+- [SIMD](/general_knowledge/simd.md)
+- [SSE4](/general_knowledge/sse4.md)
 
+## Code Examples
 
-> [!NOTE]
-> The real code example of CUDA code are in the `04_cuda_threads` folder. starting with the `04.01_vectoAdd` project.
+1. [Hello World](/10_code_example/10.00_hello_world/README.md)
+2. [Vector Addition](/10_code_example/10.01_vector_add/README.md)
+3. [Dot Product](/10_code_example/10.02_dot_product/README.md)
+4. [Matrix Multiplication](/10_code_example/10.03_mat_mul/README.md)
+5. [Tiled Matrix Multiplication](/10_code_example/10.04_tiled_mat_mul/README)
+6. [Matrix Transpose](/10_code_example/10.11_mat_transpose/README.md)
+6. [CUDA Streams](/10_code_example/10.05_streams/README.md)
+7. [CUDA Events](/10_code_example/10.10_events/README.md)
+8. [CUDA Atomics](/10_code_example/10.06_atomic/README.md)
+9. [cuBLAS](/10_code_example/10.07_cuBLAS/README.md)
+10. [cuFFT](/10_code_example/10.08_cuFFT/README.md)
+11. [Threads Synchronization](/10_code_example/10.09_synchronization/README.md)
 
 > [!NOTE]
 > In this repo we don't tell you how to install or compile CUDA code. We are here to give the basic understanding of CUDA programming.
@@ -37,6 +48,7 @@ There is also a folder called `general_knowledge` where I will store general kno
 - [CUDA Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) Official Guide from NVIDIA.
 - [CUDA Book](https://github.com/brucefan1983/CUDA-Programming)
 - [Repo for the CUDA Course](https://github.com/Infatoshi/cuda-course)
+
 ### Video
 
 - [CUDA Tools](https://youtube.com/playlist?list=PL5B692fm6--ukF8S7ul5NmceZhXLRv_lR&si=gTRCu90KSrK6GbMs)
